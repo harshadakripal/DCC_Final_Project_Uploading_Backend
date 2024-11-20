@@ -35,7 +35,7 @@ app.use("/api/v1", routes);
 app.get('/', (req, res) => {
     res.send('WorkersDeck Is Running')
 });
-app.listen(port, () => {
+app.listen(port, '0.0.0.0',() => {
     console.log(`WorkersDeck Started at http://localhost:${port}`)
 })
 
